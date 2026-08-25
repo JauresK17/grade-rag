@@ -1,0 +1,70 @@
+# ---Core API & WEB FRAMEWORK ----
+fastapi 
+uvicorn[standard]
+python-dotenv
+requests
+streamlit 
+numpy 
+pytz 
+nest-asyncio 
+
+
+
+
+#----VECTOR DB AND RETIEVAL ------
+qdrant-client 
+flashrank #Ultra-fast cross-encoder for sematic chunking 
+redis #MemoryStore for semantic caching 
+sqlalchemy 
+pg8000
+
+#LANGCHAIN & AGENTIC ORCHESTRATION 
+
+langchain 
+langgraph 
+langchain-google-vertexai 
+langchain-groq 
+langchain-community 
+langchain-openai 
+pydantic>=2.0.0 
+
+# ---DATA ingestion & Office parsing 
+
+unstructured 
+python-pptx 
+python-docx 
+pypdf 
+beautifulsoup4 
+
+
+#----Observability & distributed Tracing 
+
+langsmith 
+logfire 
+logfire[fastapi,requests]
+loguru 
+
+# --- Guadrails ----- 
+nemoguardrails  # NVDIA NeMo Guardrails for input / output safety rails 
+langchain-nvidia-ai-endpoints #Langchain integration with NVDIA AI endpoints 
+
+#---LLM Gateway ----
+portkey-ai #Portkey Gateway for unified LLM routing , fallback & observability 
+
+#Evals 
+ragas #RAG-specific evaluation metrics (faithfulness,Relevancy,Recall)
+deepeval #Pytest-compatible test runner wrapping RAGAS & safety metrics 
+langfuse #Liveproduction monitoring, tracing && user feeback collection 
+
+
+sentence-transformers #Embeddings 
+
+#----GOOGLE CLOUD PLATFORM (GCP) ---------- 
+google-cloud-storage 
+google-cloud-aiplatform 
+google-cloud-discoveryengine 
+google-cloud-documentai 
+cloud-sql-python-connector 
+
+
+
