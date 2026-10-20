@@ -11,6 +11,7 @@ dependencies = [
     "beautifulsoup4>=4.15.0",
     "cloud-sql-python-connector>=1.22.0",
     "deepeval>=4.2.0",
+    "deepevals>=0.2.0",
     "fastapi>=0.141.1",
     "flashrank>=0.2.10",
     "google-cloud-aiplatform>=1.165.1",

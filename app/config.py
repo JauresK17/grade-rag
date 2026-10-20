@@ -21,7 +21,7 @@ class Settings():
 
     #REASONING ENGINE (GROQ)
     GROQ_API_KEY=os.getenv("GROQ_API_KEY")
-    GROQ_MODEL="llama-3.3-70b-versatile"
+    GROQ_MODEL="qwen/qwen3.8-27b"
     GROQ_API_KEY_FALLBACK = os.getenv("GROQ_API_KEY_FALLBACK")
 
     #OBSERVABILITY 
@@ -32,8 +32,9 @@ class Settings():
 
     #---LLM GATEWAY (PORTKEY)
     PORTKEY_API_KEY=os.getenv("PORTKEY_API_KEY")
-    GROQ_SLUG = "rag"
-    GROQ_SLUG_2 = "brag"
+    PORTKEY_CONFIG_SLUG=os.getenv("PORTKEY_CONFIG_SLUG")
+    GROQ_SLUG = "kouame-laffind"
+    GROQ_SLUG_2 = "grade-rag"
 
 # Apply Langchain environment variables for automatic tracing 
 os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING","true")

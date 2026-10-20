@@ -38,10 +38,10 @@ def reranker_documents(query:str , documents : list[str] , top_n:int=5) -> list[
         ranker = _get_ranker()
 
         #FlashRank experts a list of dictionaries with 'id' and 'text'
-        passages = {
+        passages = [
             {"id":i,"text":doc}
             for i ,doc in enumerate(documents)
-        }
+        ]
 
         request = RerankRequest(query=query, passages=passages)
         results = ranker.rerank(request)

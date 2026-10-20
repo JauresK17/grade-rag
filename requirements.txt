@@ -66,5 +66,14 @@ google-cloud-discoveryengine
 google-cloud-documentai 
 cloud-sql-python-connector 
 
+#--- EVALUATION (EVALS) --- 
+ragas   #RAG-specific evaluation metrics (Faithfulnesss , Relevancy, Recall ) 
+deepevals #Pytest-compatible test runner wrapping RAGAS & safety metrics 
+langfuse  #Live production monitoring , tracing & user feedback collection 
+
+
+sentence-transformers  #Embeddings 
+
+
 
 
